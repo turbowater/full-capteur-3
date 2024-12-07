@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session de Mesure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Session de Mesure</h1>
+
+    <!-- Tableau A (Mesures Instantanées) -->
+    <h2>Mesures Instantanées</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Angle X (°)</th>
+                <th>Variomètre (m/s)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="angleX">0</td>
+                <td id="vario">Non disponible</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tableau B (Résumé de la Session) -->
+    <h2>Résumé de la Session</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Valeur</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Angle X Max</td><td id="angleX-max">0</td></tr>
+            <tr><td>Angle X Min</td><td id="angleX-min">0</td></tr>
+            <tr><td>Sorties de Plage (-30° à +30°)</td><td id="sorties-plage">0</td></tr>
+            <tr><td>Durée Hors Plage</td><td id="duree-hors-plage">00:00:00</td></tr>
+            <tr><td>Variomètre Max</td><td id="vario-max">Non disponible</td></tr>
+            <tr><td>Variomètre Min</td><td id="vario-min">Non disponible</td></tr>
+            <tr><td>Chocs</td><td id="chocs">0</td></tr>
+            <tr><td>Rotations</td><td id="totalRotations">0</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Tableau C (Session Précédente) -->
+    <h2>Résumé de la Session Précédente</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Valeur</th>
+            </tr>
+        </thead>
+        <tbody id="prev-session-body">
+            <tr><td colspan="2">Pas de données</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Bouton RESET -->
+    <button id="reset-button">RESET</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

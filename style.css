@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Ajout pour améliorer la lisibilité */
+}
+
+h1, h2 {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px; /* Légère augmentation du padding pour un meilleur espacement */
+    margin: 0; /* Suppression des marges par défaut */
+    border-radius: 5px; /* Ajout pour arrondir légèrement les bords */
+}
+
+table {
+    width: 90%; /* Augmenté pour mieux remplir l'écran */
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre subtile */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 15px; /* Augmenté pour un meilleur espacement */
+    text-align: center;
+    font-size: 1rem; /* Ajout pour uniformiser la taille de police */
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+    text-transform: uppercase; /* Ajout pour mettre les titres en majuscules */
+}
+
+td {
+    background-color: #f9f9f9; /* Ajout d'un fond légèrement différent */
+}
+
+td:nth-child(even) {
+    background-color: #f0f0f0; /* Alternance de couleur pour les lignes */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem; /* Ajout pour uniformiser la taille de police */
+    border-radius: 5px; /* Ajout d'un arrondi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre subtile */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animation au survol */
+}
+
+button:hover {
+    background-color: #e74c3c;
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 600px) {
+    table {
+        width: 100%; /* Adapte la table à la largeur de l'écran */
+    }
+
+    th, td {
+        font-size: 0.9rem; /* Réduction de la taille de police sur les petits écrans */
+        padding: 10px; /* Réduction de l'espacement */
+    }
+
+    button {
+        width: 90%; /* Rend le bouton plus adapté aux petits écrans */
+    }
+}
